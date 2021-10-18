@@ -7,57 +7,70 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 /* Add styles here! */
 
-h1, h2 {
+h1,
+h2,
+p {
   margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  line-height: 1.5;
 }
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 64px;
+  margin: 40px 0;
 }
 
 h2 {
   font-size: 1.5rem;
 }
 
-strong {
-  color: hsl(160deg, 100%, 30%);
+p {
+  margin: 16px 0;
+}
+
+.max-width-wrapper {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+header {
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
 }
 
 .intro-chunk {
-  font-size: 1.24rem;
-  padding: 64px 32px;
-  margin-top: 32px;
+  max-width: 300px;
 }
 
 main {
-  border-top: 8px solid hsl(0deg, 0%, 40%);
+  padding: 64px 0;
   background-color: hsl(0deg, 0%, 60%);
-  height: 100%;
 }
 
 .card {
   background-color: hsl(0deg, 0%, 100%);
   border-bottom: 8px solid hsl(0deg, 0%, 40%);
-  padding: 8 32px 16px 32px;
-  margin-top: 64px;
+  padding: 32px;
+  margin: -32px;
 }
 
 .indented-heading {
-  width: fit-content;
   background-color: hsl(45deg, 100%, 50%);
   border-bottom: 8px solid hsl(45deg, 100%, 40%);
-  padding: 16px 16px 16px 40px;
+  width: fit-content;
+  padding: 16px 40px;
   margin-left: -40px;
-}
-
-.max-width-wrapper {
-  max-width: 768px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: -16px;
 }
